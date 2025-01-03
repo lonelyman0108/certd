@@ -4,7 +4,7 @@ import { BaseNotification, IsNotification, NotificationBody, NotificationInput }
   name: 'serverchan3',
   title: 'Server酱³',
   desc: 'https://doc.sc3.ft07.com/serverchan3',
-  needPlus: true,
+  needPlus: false,
 })
 export class ServerChan3Notification extends BaseNotification {
   @NotificationInput({

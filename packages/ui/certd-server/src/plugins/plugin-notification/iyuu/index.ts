@@ -4,7 +4,7 @@ import { BaseNotification, IsNotification, NotificationBody, NotificationInput }
   name: 'iyuu',
   title: '爱语飞飞微信通知(iyuu)',
   desc: 'https://iyuu.cn/',
-  needPlus: true,
+  needPlus: false,
 })
 export class IyuuNotification extends BaseNotification {
   @NotificationInput({

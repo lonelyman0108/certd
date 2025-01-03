@@ -9,7 +9,7 @@ import { AbstractPlusTaskPlugin } from '@certd/plugin-plus';
   icon: 'ant-design:aliyun-outlined',
   group: pluginGroups.aliyun.key,
   desc: '部署证书到阿里云WAF',
-  needPlus: true,
+  needPlus: false,
   default: {
     strategy: {
       runStrategy: RunStrategy.SkipWhenSucceed,

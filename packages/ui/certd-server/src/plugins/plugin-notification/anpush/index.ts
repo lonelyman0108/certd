@@ -4,7 +4,7 @@ import { BaseNotification, IsNotification, NotificationBody, NotificationInput }
   name: 'anpush',
   title: 'AnPush',
   desc: 'https://anpush.com',
-  needPlus: true,
+  needPlus: false,
 })
 export class AnPushNotification extends BaseNotification {
   @NotificationInput({

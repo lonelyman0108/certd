@@ -4,7 +4,7 @@ import { BaseNotification, IsNotification, NotificationBody, NotificationInput }
   name: 'slack',
   title: 'Slack通知',
   desc: 'Slack消息推送通知',
-  needPlus: true,
+  needPlus: false,
 })
 export class SlackNotification extends BaseNotification {
   @NotificationInput({

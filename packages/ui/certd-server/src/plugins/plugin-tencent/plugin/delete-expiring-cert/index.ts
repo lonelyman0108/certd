@@ -15,7 +15,7 @@ import { remove } from 'lodash-es';
       runStrategy: RunStrategy.AlwaysRun,
     },
   },
-  needPlus: true,
+  needPlus: false,
 })
 export class TencentDeleteExpiringCert extends AbstractPlusTaskPlugin {
   @TaskInput({

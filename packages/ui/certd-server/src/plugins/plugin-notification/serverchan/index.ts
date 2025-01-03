@@ -4,7 +4,7 @@ import { BaseNotification, IsNotification, NotificationBody, NotificationInput }
   name: 'serverchan',
   title: 'Server酱ᵀ',
   desc: 'https://sct.ftqq.com/',
-  needPlus: true,
+  needPlus: false,
 })
 export class ServerChanNotification extends BaseNotification {
   @NotificationInput({
