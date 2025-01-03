@@ -6,6 +6,7 @@ import { Repository } from 'typeorm';
 import { isComm } from '@certd/plus-core';
 import { BuiltInPluginService } from '../../pipeline/service/builtin-plugin-service.js';
 import { merge } from 'lodash-es';
+import { PluginDefine } from '@certd/pipeline';
 
 @Provide()
 @Scope(ScopeEnum.Request, { allowDowngrade: true })
@@ -41,9 +42,9 @@ export class PluginService extends BaseService<PluginEntity> {
       });
     }
 
-    if (!isComm()) {
-      return groups;
-    }
+    // if (!isComm()) {
+    //   return groups;
+    // }
     const list = await this.list({
       query: {
         type: 'builtIn',
@@ -57,6 +58,7 @@ export class PluginService extends BaseService<PluginEntity> {
         continue;
       }
       group.plugins = group.plugins.filter(it => !disabledNames.includes(it.name));
+      group.plugins.forEach(item => (item as PluginDefine).needPlus = false);
     }
     return groups;
   }
