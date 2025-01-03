@@ -67,8 +67,8 @@ jobs:
           push: true
           context: ./packages/ui/
           tags: |
-            greper/certd:latest
-            greper/certd:${{steps.get_certd_version.outputs.result}}
+            lonelyman0108/certd:latest
+            lonelyman0108/certd:${{steps.get_certd_version.outputs.result}}
 
 #      - name: Build armv7
 #        uses: docker/build-push-action@v6
