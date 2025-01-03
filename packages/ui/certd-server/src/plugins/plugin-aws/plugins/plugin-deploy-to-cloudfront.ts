@@ -12,7 +12,7 @@ import { AbstractPlusTaskPlugin } from '@certd/plugin-plus';
   desc: '部署证书到 AWS CloudFront',
   icon: 'clarity:plugin-line',
   group: pluginGroups.aws.key,
-  needPlus: true,
+  needPlus: false,
   default: {
     strategy: {
       runStrategy: RunStrategy.SkipWhenSucceed,

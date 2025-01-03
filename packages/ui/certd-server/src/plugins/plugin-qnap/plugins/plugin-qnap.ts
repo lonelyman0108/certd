@@ -16,7 +16,7 @@ import { SshAccess, SshClient } from '@certd/plugin-lib';
       runStrategy: RunStrategy.SkipWhenSucceed,
     },
   },
-  needPlus: true,
+  needPlus: false,
 })
 export class QnapDeploy extends AbstractPlusTaskPlugin {
   //证书选择，此项必须要有

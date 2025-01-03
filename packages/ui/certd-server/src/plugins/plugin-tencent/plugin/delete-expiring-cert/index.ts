@@ -16,7 +16,7 @@ import { TencentAccess } from '@certd/plugin-lib';
       runStrategy: RunStrategy.AlwaysRun,
     },
   },
-  needPlus: true,
+  needPlus: false,
 })
 export class TencentDeleteExpiringCert extends AbstractPlusTaskPlugin {
   @TaskInput({

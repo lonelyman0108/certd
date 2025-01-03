@@ -20,7 +20,7 @@ const defaultFilePrefix = 'db-backup';
       runStrategy: RunStrategy.AlwaysRun,
     },
   },
-  needPlus: true,
+  needPlus: false,
 })
 export class DBBackupPlugin extends AbstractPlusTaskPlugin {
   @TaskInput({
